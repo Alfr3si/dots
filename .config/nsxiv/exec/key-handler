@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+while read file; do
+  case "$1" in
+    "Return")
+      wal -i "$file"
+      feh --bg-fill "$file"
+      killall nsxiv
+      xrdb -merge ~/.Xresources
+      xsetroot -name "fsignal:2"
+      notify-send "  Wallpaper changed"
+      ;;
+    *)
+      ;;
+  esac
+done

@@ -1,0 +1,10 @@
+! --- Cargar colores de Pywal ---
+#include "/home/alfr3d/.cache/wal/colors.Xresources"
+
+! --- Colores usados por el parche xrdb de dwm ---
+normbgcolor:     color0
+normfgcolor:     color7
+normbordercolor: color0
+selbgcolor:      color2
+selfgcolor:      color15
+selbordercolor:  color2
