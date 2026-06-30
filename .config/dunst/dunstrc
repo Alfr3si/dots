@@ -1,39 +1,46 @@
 [global]
-  monitor = 0
-  follow = keyboard
-  width = (250, 500)
-  height = (0, 750)
-  offset = (13, 34)
-  padding = 5
-  horizontal_padding = 5
-  gap_size = 3
-  transparency = 35
-  frame_width = 1
-  frame_color = "#C5D3E8"
-  font = JetBrainsMono Nerd Font:style=Bold:size=13
-  corner_radius = 5
-  min_icon_size = 32
-  max_icon_size = 32
-  format = "<b>%s</b>\n%b"
+    monitor = 0
+    follow = keyboard
+    
+    # Geometría y posición
+    width = (250, 500)
+    height = (0, 750)
+    offset = (20, 45)          
+    gap_size = 6                
+    
+    # Espaciado interno (Padding)
+    padding = 10
+    horizontal_padding = 12
+    
+    # Aspecto Visual
+    transparency = 10           
+    corner_radius = 6            
+    frame_width = 2               
+    frame_color = "#333333"
+    
+    # Tipografía y formato
+    font = JetBrainsMono Nerd Font 11
+    format = "<b>%s</b>\n%b"
+    alignment = left
+    
+    # Iconos
+    min_icon_size = 32
+    max_icon_size = 32
 
 [urgency_low]
-  foreground = "#C5D3E8"
-  background = "#222222"
-  timeout = 3
-  frame_width = 4
-  frame_color = "#C5D3E8"
+    background = "#1e1e2e"        
+    foreground = "#a6adc8"        
+    frame_color = "#45475a"       
+    timeout = 3
 
 [urgency_normal]
-  foreground = "#62ef80"
-  background = "#222222"
-  timeout = 5
-  frame_width = 4
-  frame_color = "#62ef80"
+    background = "#1e1e2e"        
+    foreground = "#cdd6f4"        
+    frame_color = "#62ef80"       
+    timeout = 5
 
 [urgency_critical]
-  foreground = "#fc5470"
-  background = "#222222"
-  timeout = 10
-  frame_width = 4
-  frame_color = "#fc5470"
-
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#fc5470"       
+    timeout = 5
